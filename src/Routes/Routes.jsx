@@ -7,6 +7,8 @@ import Login from "../pages/Login/Login"
 import Signup from "../pages/Signup/Signup"
 import ContactUs from "../pages/ContactUs/ContactUs";
 import Testimonials from "../pages/Testimonials/Testimonials";
+import ServiceBanner from "../pages/Services/ServiceBanner";
+import ScheduleForm from "../pages/Services/ScheduleForm";
 
 export  const router = createBrowserRouter([
     {
@@ -30,8 +32,16 @@ export  const router = createBrowserRouter([
             element: <ContactUs></ContactUs>
         },
         {
+            path: '/services',
+            element: <ServiceBanner></ServiceBanner>
+        },
+        {
             path: '/testimonials',
             element: <Testimonials></Testimonials>
+        },
+        {
+            path: '/schedule-form',
+            element:<ScheduleForm></ScheduleForm>
         }
       ]
     },
